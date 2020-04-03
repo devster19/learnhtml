@@ -8,5 +8,15 @@
 </head>
 <body>
     <h1>My HTML is published on GitHub</h1>
+    <script>
+        window.onload = function(){
+            console.log("web start");
+            var i = 0;
+            setInterval(function(){
+                  i = i+1;
+                  window.postMessage({number: i});
+            },1000)
+        }
+    </scirpt>
 </body>
 </html>
