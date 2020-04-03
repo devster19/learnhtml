@@ -7,6 +7,16 @@
     <title>LEARN HTML</title>
 </head>
 <body>
-    <h1>My HTML is published on GitHub and change on Branch gh-pages</h1>
+    <h1>My HTML is published on GitHub with Easy JS</h1>
+    <script>
+        window.onload = function(){
+            console.log("web start");
+            var i = 0;
+            setInterval(function(){
+                  i = i+1;
+                  window.postMessage({number: i});
+            },1000)
+        }
+    </scirpt>
 </body>
 </html>
